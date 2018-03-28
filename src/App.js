@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import { Container, Row, Col } from 'reactstrap';
-import CatCard from './Components/CatCard';
-import CatsSlideShow from './Components/CatsSlideShow';
+import Pages from './Components/Pages';
 
 class App extends Component {
   constructor(props) {
@@ -18,20 +17,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        Cats
-        <Container>
-          <Row>
-            <Col><CatCard  name="CatName" /></Col>
-            <Col><CatCard name="CatName" /></Col>
-            <Col><CatCard name="CatName" /></Col>
-          </Row>
-          <br/>
-          <Row>
-            <Col><CatsSlideShow /></Col>
-          </Row>
-          <br/>
-        </Container>
-
+        <Pages />
       </div>
     );
   }
